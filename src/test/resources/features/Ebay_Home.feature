@@ -8,7 +8,7 @@ Feature: Ebay Home Page Scenarios
     Then I read excel data
    # Then I update excel sheet "filePath""sheetName"5,6"value"
     Then I update excel sheet "excel updated" in row 2 and column 1 of "Sheet1" in file "src/test/resources/data.xlsx"
-    Then i update samson branch
+   # Then i update samson branch
     
 
   @p3
