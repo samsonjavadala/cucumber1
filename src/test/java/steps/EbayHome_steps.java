@@ -35,8 +35,12 @@ public class EbayHome_steps {
 	public void i_am_on_ebay_home_page() {
 
 		//driver.get("https://www.ebay.com/");
-		common_Actions.goToUrl("https://www.ebay.com/");
+		common_Actions.goToUrl("https://mail.google.com/mail/u/0/#inbox");
 
+	}
+	@Given("I open gmail with username and password")
+	public void i_open_gmail_with_username_and_password() {
+		ebayHome_Actions.clickAdvancedLink();
 	}
 
 	@When("I click on Advanced Link")
@@ -115,6 +119,17 @@ public class EbayHome_steps {
 		   fail("Title mismatch" ) ; 
 	   }
 	}
+	///////////////bible////
+	
+
+
+	@Given("I am open Isaiah {int}:{int}")
+	public void i_am_open_isaiah(Integer int1, Integer int2) {
+	    System.out.println("Opened Bible Isaiah 53:5");
+	}
+
+
+
 
 
 

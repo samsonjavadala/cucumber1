@@ -13,7 +13,7 @@ public class Common_Actions {
 		
 	}
 	
-	public void goToUrl(String url) {
+	public void goToUrl (String url) {
 		driver.get(url);
 	}
 	

@@ -1,14 +1,32 @@
 Feature: Ebay Home Page Scenarios
 
+
+
+
   @p1
   Scenario: Advanced Search Link
     Given I am on Ebay Home Page
+    And  I open gmail with username and password
     When I click on Advanced Link
     Then I navigate to Advanced Search page
     Then I read excel data
    # Then I update excel sheet "filePath""sheetName"5,6"value"
-    Then I update excel sheet "excel updated" in row 2 and column 1 of "Sheet1" in file "src/test/resources/data.xlsx"
+    Then I update excel sheet "TASTY" in row 2 and column 1 of "Sheet1" in file "src/test/resources/data.xlsx"
    # Then i update samson branch
+   
+   @p29 
+ Scenario Outline:Adding data in excel
+ Given I am on Ebay Home Page
+    When I click on Advanced Link
+    Then I navigate to Advanced Search page
+    Then I read excel data
+    Then I update excel sheet "<Email ID>" in row "<Row Number>" and column"<column Number>" of "<Sheet1>" in file "<src/test/resources/data.xlsx>"
+    
+    Examples:
+    |Email ID |Row Number|column Number|Sheet1|src/test/resources/data.xlsx|
+    |father|3|1|Sheet1|src/test/resources/data.xlsx|
+    
+
     
 
   @p3
@@ -25,6 +43,17 @@ Feature: Ebay Home Page Scenarios
     Given I am on Ebay Home Page
     When I serach for 'i phone 14'
     Then I validate atleast 5000 search items present
+
+@bible
+  Scenario: Isaiah 53:5
+    Given I am open Isaiah 53:5
+    Then  i print Isaiah 53:5 i console
+    
+
+
+
+
+
 
   @p40
   Scenario: search an item in category

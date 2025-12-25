@@ -18,6 +18,7 @@ public class EbayHome_Elements {
 	}
 
 	@FindBy(linkText="Advanced") public WebElement advancedLink;
+	@FindBy(xpath="//input[@id='gh-ac']") public WebElement GMuser;
 	@FindBy(xpath="//input[@id='gh-ac']") public WebElement searchBox;
 	@FindBy(xpath="//input[@id='gh-btn']") public WebElement searchButon;
 	@FindBy(css="h1.srp-controls__count-heading>span.BOLD:first-child") public WebElement numOfItems;
