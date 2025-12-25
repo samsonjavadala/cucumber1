@@ -17,7 +17,7 @@ import io.cucumber.junit.CucumberOptions;
 		) 
 		
 		//name = {"Logo"}
-////// samson
+////// samson javadala
 
 public class TestRunner {
 
